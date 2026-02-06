@@ -1,0 +1,7 @@
+sudo apt update && sudo apt install nmap
+# CentOS/RHEL
+sudo yum install nmap
+# macOS
+brew install nmap
+# Verify
+nmap --version
