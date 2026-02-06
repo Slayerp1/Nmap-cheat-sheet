@@ -1,0 +1,33 @@
+bash 
+
+-- > Basic Scan 
+nmap <target>
+Scans the top 1000 most common ports.
+Use when: You want a general overview of a target.
+
+--> Fast Scan
+nmap -F <target>
+Scans only the top 100 ports.
+Use when: You need quick results and don't need a full scan.
+
+--> Scan Specific Ports
+nmap -p 22,80,443 <target>
+Scans only the ports you specify.
+Use when: You know exactly which services you want to check.
+
+--> Scan a Port Range
+nmap -p 1-100 <target>
+Scans all ports in the given range.
+Use when: You want to check a block of ports.
+
+--> Scan All Ports
+nmap -p- <target>
+Scans all 65535 ports.
+Use when: Thorough audit, finding hidden services on unusual ports.
+
+--> Scan Top N Ports
+nmap --top-ports 10 <target>
+Scans the N most commonly used ports.
+Use when: Quick targeted check without scanning everything.
+
+
