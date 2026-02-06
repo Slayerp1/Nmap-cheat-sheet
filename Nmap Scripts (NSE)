@@ -1,0 +1,27 @@
+Scripts (NSE)
+
+--> Run Default Scripts
+nmap -sC <target>
+Runs a set of safe, useful default scripts.
+Use when: General info gathering alongside a scan.
+
+--> Vulnerability Scan
+nmap --script vuln <target>
+Checks for known vulnerabilities.
+Use when: Security audit on your own systems.
+
+--> HTTP Scripts
+nmap --script http-* <target>
+Runs all HTTP-related scripts.
+Use when: Testing a web server.
+
+--> SSL/TLS Check
+nmap --script ssl-enum-ciphers -p 443 <target>
+Checks SSL/TLS configuration and cipher strength.
+Use when: Verifying HTTPS security on your server.
+
+--> Find Available Scripts
+ls /usr/share/nmap/scripts/
+
+--> Get Help on a Script
+nmap --script-help <script-name>
