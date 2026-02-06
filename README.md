@@ -13,7 +13,7 @@ A beginner-friendly reference of Nmap commands — what they do and when to use 
 - [Host Discovery Scans](Host%20Discovery%20Scans)
 - [Nmap Scan Types](Nmap%20Scan%20Types)
 - [Nmap Detection](Nmap%20Detection)
-- [Nmap Timing & Speed Scans](Nmap%20Timing%20%26%20Speed%20Scans)
+- [Nmap Timming & Speed Scans](Nmap%20Timing%20%26%20Speed%20Scans)
 - [Nmap Scripts (NSE)](Nmap%20Scripts%20(NSE))
 - [Nmap Output & Saving](Nmap%20Output%20%26%20Saving)
 - [Nmap Targeting Scans](Nmap%20Targeting%20Scans)
