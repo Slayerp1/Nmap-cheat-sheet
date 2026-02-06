@@ -1,0 +1,26 @@
+Targeting
+
+--> Scan Multiple IPs
+nmap 192.168.1.1 192.168.1.5 192.168.1.10
+Scans each listed IP.
+Use when: Checking specific devices.
+
+--> Scan an IP Range
+nmap 192.168.1.1-20
+Scans all IPs from .1 to .20.
+Use when: Scanning part of a network.
+
+--> Scan Entire Subnet
+nmap 192.168.1.0/24
+Scans all 254 hosts in the subnet.
+Use when: Full network scan.
+
+--> Scan Targets from a File
+nmap -iL targets.txt
+Reads IP addresses from a text file (one per line).
+Use when: You have many targets to scan.
+
+--> Exclude Specific IPs
+nmap 192.168.1.0/24 --exclude 192.168.1.1,192.168.1.5
+Scans the range but skips the listed IPs.
+Use when: You want to avoid scanning critical servers.
