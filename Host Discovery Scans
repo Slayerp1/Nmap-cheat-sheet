@@ -1,0 +1,16 @@
+Host Discovery Scans
+
+--> Ping Scan (Find Live Devices)
+nmap -sn <range>
+Finds which devices are online without scanning ports.
+Use when: First step — see what's on the network.
+
+--> Skip Ping (Assume Host is Up)
+nmap -Pn <target>
+Doesn't check if host is up, goes straight to scanning.
+Use when: Firewall blocks ping but services are still running.
+
+--> List Scan
+nmap -sL <range>
+Lists all targets without actually scanning them.
+Use when: You want to verify what IPs nmap will scan before running it.
