@@ -1,0 +1,25 @@
+Timing & Speed
+
+--> Paranoid (Slowest)
+nmap -T0 <target>
+Use when: Trying to avoid intrusion detection systems.
+
+--> Sneaky
+nmap -T1 <target>
+Use when: Trying to avoid detection, slightly faster than T0.
+
+--> Polite
+nmap -T2 <target>
+Use when: You want to reduce bandwidth usage on the network.
+
+--> Normal (Default)
+nmap -T3 <target>
+Use when: Everyday scanning. This is the default if you don't specify.
+
+--> Aggressive (Fast)
+nmap -T4 <target>
+Use when: Fast scans on a reliable network. Most commonly used speed.
+
+Insane (Fastest)
+nmap -T5 <target>
+Use when: Speed matters more than accuracy. May miss results.
