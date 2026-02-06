@@ -1,0 +1,21 @@
+Scan Types
+
+--> TCP SYN Scan (Stealth)
+nmap -sS <target>
+Half-open scan, doesn't complete the connection.
+Use when: Default go-to scan. Fast and stealthy. Needs root/sudo.
+
+--> TCP Connect Scan
+nmap -sT <target>
+Full TCP connection to each port.
+Use when: You don't have root/sudo access.
+
+--> UDP Scan
+nmap -sU <target>
+Scans UDP ports instead of TCP.
+Use when: Looking for DNS (53), SNMP (161), DHCP (67/68) services. Very slow — combine with -F or specific ports.
+
+--> ACK Scan
+nmap -sA <target>
+Sends ACK packets to check firewall rules.
+Use when: You want to know if a firewall is filtering ports.
