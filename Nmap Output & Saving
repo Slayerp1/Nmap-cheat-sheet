@@ -1,0 +1,36 @@
+Output & Saving
+
+--> Save as Normal Text
+nmap -oN scan.txt <target>
+Saves output in a human-readable format.
+Use when: You want a simple report you can read.
+
+--> Save as XML
+nmap -oX scan.xml <target>
+Saves output in XML format.
+Use when: Feeding results into other security tools.
+
+--> Save as Grepable
+nmap -oG scan.gnmap <target>
+Saves in a format that's easy to search with grep.
+Use when: Processing results with scripts later.
+
+--> Save in All Formats
+nmap -oA scan <target>
+Creates three files: scan.nmap, scan.xml, scan.gnmap.
+Use when: Best practice — covers all your needs at once.
+
+--> Verbose Output
+nmap -v <target>
+Shows what nmap is doing in real time.
+Use when: You want to see progress during the scan.
+
+--> Extra Verbose
+nmap -vv <target>
+Even more detail than -v.
+Use when: Debugging or learning how nmap works.
+
+--> Show Reason for Port State
+nmap --reason <target>
+Tells you why nmap marked a port as open/closed/filtered.
+Use when: You want to understand the results better.
