@@ -1,0 +1,19 @@
+--> Skip DNS Lookup
+nmap -n <target>
+Doesn't try to resolve IP addresses to hostnames.
+Use when: You want faster scans and don't need hostnames.
+
+--> Force DNS Lookup
+nmap -R <target>
+Always tries to resolve IPs to hostnames.
+Use when: You want to see device names on the network.
+
+--> Fragment Packets
+nmap -f <target>
+Breaks packets into smaller pieces.
+Use when: Trying to bypass simple firewalls or packet filters.
+
+--> Use Decoys
+nmap -D RND:10 <target>
+Sends packets from 10 random fake IPs along with yours.
+Use when: Hiding your real IP during a scan.
