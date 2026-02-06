@@ -1,0 +1,16 @@
+Detection Scans
+
+--> Service Version Detection
+nmap -sV <target>
+Identifies what software and version is running on open ports.
+Use when: You need to know the exact software behind a service.
+
+--> OS Detection
+nmap -O <target>
+Tries to identify the operating system.
+Use when: You want to know if a device runs Linux, Windows, etc. Needs root/sudo.
+
+--> Aggressive Scan
+nmap -A <target>
+Does everything — OS detection, version detection, scripts, and traceroute.
+Use when: You want full information about a target. Loud and noticeable.
